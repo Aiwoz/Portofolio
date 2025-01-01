@@ -1,0 +1,39 @@
+.header-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px); /* Commence plus haut */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:0px;
+}
+
+.arrow {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}

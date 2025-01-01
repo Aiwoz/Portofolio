@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiwoz - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon" />
+    <meta name="description" content="Voici mon portfolio." />
+    <meta property="og:title" content="Aiwoz - Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aiwoz.fr/">
+    <meta property="og:image" content="https://aiwoz.fr//assets/img/favicon.png">
+    <meta property="og:description" content="Voici mon portfolio.">
+    <meta property="og:site_name" content="Aiwoz.fr">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="theme-color" content="#00bcf7" />
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="header-section text-center py-20" data-aos="fade-in">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold">Bienvenue sur Mon Portfolio</h1>
+            <p class="mt-4 text-lg md:text-2xl">
+                Je suis développeur
+                <span id='text' class="inline-block"></span>
+                <span class='console-underscore' id='console'>|</span>
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 arrow">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 mb-28 mb-32" data-aos="fade-up">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">À propos</h2>
+            <p>Je m'appelle Amadeo.
+                <br>Je me suis lancé dans le développement Java il y a quelques années.
+                <br>Aujourd'hui, je me suis spécialisé dans plusieurs aspects du développement.
+                <br>Je suis capable de créer des sites, bots Discord, plugins/mods Minecraft, ...
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 mb-32" data-aos="fade-up">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Mes compétences</h2>
+            <div class="flex justify-center mt-8 space-x-4">
+                <img src="/assets/img/html.png" alt="Logo HTML" class="h-40 w-auto">
+                <img src="/assets/img/css.png" alt="Logo Css" class="h-40 w-auto">
+                <img src="/assets/img/js.png" alt="Logo JavaScript" class="h-40 w-auto">
+                <img src="/assets/img/php.png" alt="Logo PHP" class="h-40 w-auto">
+            </div>
+            <div class="flex justify-center mt-8 space-x-4">
+                <img src="/assets/img/java.webp" alt="Logo Java" class="h-40 w-auto">
+                <img src="/assets/img/mysql.svg" alt="Logo Mysql" class="h-40 w-auto">
+                <img src="/assets/img/next.js.png" alt="Logo Next.js" class="h-40 w-auto">
+                <img src="/assets/img/discord.js.png" alt="Logo Discord.js" class="h-40 w-auto">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-12 mb-32">
+        <div class="container mx-auto px-60">
+            <h2 class="text-3xl font-bold mb-4 text-center">Mes Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-gray-800 rounded-lg p-6 transform transition-transform duration-300 hover:scale-110">
+                    <h3 class="text-xl font-bold mb-2 text-center"><u>PrexiBot :</u></h3>
+                    <p>Bot multifonction actuellement en cours de développement.<br>Il sera votre allié indispensable sur Discord.</p>
+                    <div class="flex justify-center" style="margin-top: 125px;">
+                        <a class="bg-green-600 text-white font-bold py-2 px-4 rounded hover:bg-green-900 flex items-center justify-between" href="https://prexibot.fr/" target="_blank">
+                            PrexiBot
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6 ml-2">
+                                <path class="cls-1" d="M13.5,6H5.2c-1.2,0-2.2,1-2.2,2.2v10.5c0,1.2,1,2.2,2.2,2.2h10.5c1.2,0,2.2-1,2.2-2.2v-8.2M9.9,14.1L21,3M21,3h-5.2M21,3v5.2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 transform transition-transform duration-300 hover:scale-110">
+                    <h3 class="text-xl font-bold mb-2 text-center"><u>Minecraft Authenticator :</u></h3>
+                    <p>Plugin Minecraft rajoutant un système de connexion pour les joueurs qui rejoignent le serveur.</p>
+                    <div class="flex justify-center" style="margin-top: 125px;">
+                        <a class="bg-yellow-600 text-white font-bold py-2 px-4 rounded hover:bg-yellow-900 flex items-center justify-between" href="https://www.spigotmc.org/resources/authenticator-minecraft.103098/" target="_blank">
+                            Voir sur Spigot
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6 ml-2">
+                                <path class="cls-1" d="M13.5,6H5.2c-1.2,0-2.2,1-2.2,2.2v10.5c0,1.2,1,2.2,2.2,2.2h10.5c1.2,0,2.2-1,2.2-2.2v-8.2M9.9,14.1L21,3M21,3h-5.2M21,3v5.2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="py-20" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact</h2>
+            <p class="text-xl mb-6 text-center">Si vous souhaitez travailler avec moi pour vos projets, vous pouvez prendre contact avec moi via les réseaux ci-dessous :</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://discord.gg/aiwoz" class="bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-lg shadow-md transition duration-300">
+                    Discord
+                </a>
+                <a href="mailto:contact.aiwoz@gmail.com" class="bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded-lg shadow-md transition duration-300">
+                    Email
+                </a>
+                <a href="https://github.com/Aiwoz/" class="bg-green-600 hover:bg-green-800 text-white py-2 px-4 rounded-lg shadow-md transition duration-300">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+    <p class="text-xl mt-0.5 mb-2 text-center">© 2024 Tous Droits Réservés</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
